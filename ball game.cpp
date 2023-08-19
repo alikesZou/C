@@ -5,13 +5,13 @@
 #define FOOD_NUM 200 
 #define WIDTH 1024
 #define HEIGHT 640
-struct Ball//Ğ¡Çò½á¹¹£ºÍæ¼Ò£¬Ê³Îï£¬ÈËÎï£¨ÈË¹¤ÖÇÕÏ£© 
+struct Ball//å°çƒç»“æ„ï¼šç©å®¶ï¼Œé£Ÿç‰©ï¼Œäººç‰©ï¼ˆäººå·¥æ™ºéšœï¼‰ 
 {
 	int x;
 	int y;
 	int r;
 	DWORD color; 
-	bool flag;//ÊÇ·ñ´æÔÚ 
+	bool flag;//æ˜¯å¦å­˜åœ¨ 
 };
 struct Ball food[FOOD_NUM];
 void GameInit(){
@@ -24,8 +24,8 @@ void GameInit(){
 
 int main()
 {
-	initgraph(WIDTH,HEIGHT);//½¨Á¢Ò»¸öÍ¼Ïñ´°¿Ú 
-	//circle(50,50,50);ÔÚÍ¼Ïñ´°¿ÚÉÏ»æÖÆÒ»¸öÔ²ĞÄÔÚ£¨50£¬50£© °ë¾¶Îª50µÄÔ² 
+	initgraph(WIDTH,HEIGHT);//å»ºç«‹ä¸€ä¸ªå›¾åƒçª—å£ 
+	//circle(50,50,50);åœ¨å›¾åƒçª—å£ä¸Šç»˜åˆ¶ä¸€ä¸ªåœ†å¿ƒåœ¨ï¼ˆ50ï¼Œ50ï¼‰ åŠå¾„ä¸º50çš„åœ† 
 	printf("hello world");
 	getchar();
 	return 0;
